@@ -40,7 +40,7 @@ var surveyJSON = {
     {
      "type": "html",
      "name": "question1",
-     "html": "</html>\n<h1><center>Instructions</center></h1>\n</br>\n</br>\nThis experiment consists of two parts: One online session and one in-lab session. Before starting, I will ask you to generate an ID to link the results of both sessions. Please enter in the textbox below the first two letters of your first name followed by the first two letters of your last name and a random two-digit number (e.g. <i>John Doe</i>, jodo12). Please write this ID down as you will be asked for it during the in-lab session. \n</br>\n</br>\n<p style=\"font-size:20px\">Please enter your ID:</p>\n</html>"
+     "html": "</html>\n<h1><center>Instructions</center></h1>\n</br>\n</br>\nThis experiment consists of two parts: One online session and one in-lab session. Before starting, I will ask you to generate an ID to link the results of both sessions. Please enter in the textbox below the first two letters of your first name followed by the first two letters of your last name and the two-digit number corresponding to your birthday (e.g. <i>John Doe</i>, jodo12). Please write this ID down as you will be asked for it during the in-lab session. \n</br>\n</br><p style=\"font-size:20px\">Please enter your ID:</p>\n</html>"
     },
     {
      "type": "text",
@@ -57,111 +57,121 @@ var surveyJSON = {
     {
      "type": "html",
      "name": "question5",
-     "html": "<html>\nPlease read the instructions below to answer the questions.\n</br>\n</br>\nFor each of the statements below, please indicate whether or not the statement is characteristic of you or of what you believe. For example, if the statement is extremely uncharacteristic of you or of what you believe about yourself (not at all like you) please place a \"1\" on the likert scale next to the statement. If the statement is extremely characteristic of you or of what you believe about yourself (very much like you) please place a \"5\" on the likert scale next to the statement. \n</html>"
+     "html": "<html>\nPlease read the instructions below to answer the questions.\n</br>\n</br>\nFor each of the statements below, please indicate whether or not the statement is characteristic of you or of what you believe. For example, if the statement is extremely uncharacteristic of you or of what you believe about yourself (not at all like you) please place a \"1\" on the likert scale next to the statement. If the statement is extremely characteristic of you or of what you believe about yourself (very much like you) please place a \"5\" on the likert scale next to the statement. \n</br>\n</br>\nYou should use the following scale as you rate each of the statements below.\n</br>\n</br>\n<center><p><b>1-extremely uncharacteristic of me</b>&emsp;<b>2-somewhat uncharacteristic of me</b>&emsp;<b>3-uncertain</b>&emsp;<b>4-somewhat characteristic of me</b>&emsp;<b>5-extremely characteristic of me</b></p></center>\n</html>"
     },
     {
-     "type": "matrix",
-     "name": "nfc_test_items",
-     "useDisplayValuesInTitle": false,
-     "title": "Need for Cognition Test",
-     "descriptionLocation": "underTitle",
+     "type": "matrixdynamic",
+     "name": "question7",
+     "width": "1800",
+     "indent": -6,
+     "isRequired": true,
      "titleLocation": "hidden",
      "columns": [
       {
-       "value": "1",
-       "text": "1 Extremely uncharacteristic of me"
+       "name": "q1",
+       "title": "1. I prefer complex to simple problems.",
+       "isRequired": true
       },
       {
-       "value": "2",
-       "text": "2 Somewhat uncharacteristic of me"
+       "name": "q2",
+       "title": "2. I like to have the responsibility of handling a situation that requires a lot of thinking.",
+       "isRequired": true
       },
       {
-       "value": "3",
-       "text": "3 Uncertain"
+       "name": "q3",
+       "title": "3. Thinking is not my idea of fun.",
+       "isRequired": true
       },
       {
-       "value": "4",
-       "text": "4 Somewhat characteristic of me"
+       "name": "q4",
+       "title": "4. I would rather do something that requires little thought than something that is sure to challenge my thinking abilities.",
+       "isRequired": true
       },
       {
-       "value": "5",
-       "text": "5 Extremely characteristic of me"
+       "name": "q5",
+       "title": "5. I try to anticipate and avoid situations where there is a likely chance I will have to think in depth about something.",
+       "isRequired": true
+      },
+      {
+       "name": "q6",
+       "title": "6. I find satisfaction in deliberating hard and for long hours.",
+       "isRequired": true
+      },
+      {
+       "name": "q7",
+       "title": "7. I only think as hard as I have to.",
+       "isRequired": true
+      },
+      {
+       "name": "q8",
+       "title": "8. I prefer to think about small daily projects to long term ones.",
+       "isRequired": true
+      },
+      {
+       "name": "q9",
+       "title": "9. I like tasks that require little thought once I’ve learned them.",
+       "isRequired": true
+      },
+      {
+       "name": "q10",
+       "title": "10. The idea of relying on thought to make my way to the top appeals to me.",
+       "isRequired": true
+      },
+      {
+       "name": "q11",
+       "title": "11. I really enjoy a task that involves coming up with new solutions to problems.",
+       "isRequired": true
+      },
+      {
+       "name": "q12",
+       "title": "12. Learning new ways to think doesn’t excite me very much.",
+       "isRequired": true
+      },
+      {
+       "name": "q13",
+       "title": "13. I prefer my life to be filled with puzzles I must solve.",
+       "isRequired": true
+      },
+      {
+       "name": "q14",
+       "title": "14. The notion of thinking abstractly is appealing to me.",
+       "isRequired": true
+      },
+      {
+       "name": "q15",
+       "title": "15. I would prefer a task that is intellectual, difficult, and important to one that is somewhat important but does not require much thought.",
+       "isRequired": true
+      },
+      {
+       "name": "q16",
+       "title": "16. I feel relief rather than satisfaction after completing a task that requires a lot of mental effort.",
+       "isRequired": true
+      },
+      {
+       "name": "q17",
+       "title": "17. It’s enough for me that something gets the job done; I don’t care how or why it works.",
+       "isRequired": true
+      },
+      {
+       "name": "q18",
+       "title": "18. I usually end up deliberating about issues even when they do not affect me personally.",
+       "isRequired": true
       }
      ],
-     "rows": [
-      {
-       "value": "question 1",
-       "text": "1. I prefer complex to simple problems."
-      },
-      {
-       "value": "question 2",
-       "text": "2. I like to have the responsibility of handling a situation that requires a lot of thinking."
-      },
-      {
-       "value": "question 3",
-       "text": "3. Thinking is not my idea of fun."
-      },
-      {
-       "value": "question 4",
-       "text": "4. I would rather do something that requires little thought than something that is sure to challenge my thinking abilities."
-      },
-      {
-       "value": "question 5",
-       "text": "5. I try to anticipate and avoid situations where there is a likely chance I will have to think in depth about something."
-      },
-      {
-       "value": "question 6",
-       "text": "6. I find satisfaction in deliberating hard and for long hours."
-      },
-      {
-       "value": "question 7",
-       "text": "7. I only think as hard as I have to."
-      },
-      {
-       "value": "question 8",
-       "text": "8. I prefer to think about small daily projects to long term ones."
-      },
-      {
-       "value": "question 9",
-       "text": "9. I like tasks that require little thought once I’ve learned them."
-      },
-      {
-       "value": "quesiton 10",
-       "text": "10. The idea of relying on thought to make my way to the top appeals to me."
-      },
-      {
-       "value": "question 11",
-       "text": "11. I really enjoy a task that involves coming up with new solutions to problems."
-      },
-      {
-       "value": "question 12",
-       "text": "12. Learning new ways to think doesn’t excite me very much."
-      },
-      {
-       "value": "question 13",
-       "text": "13. I prefer my life to be filled with puzzles I must solve."
-      },
-      {
-       "value": "question 14",
-       "text": "14. The notion of thinking abstractly is appealing to me."
-      },
-      {
-       "value": "question 15",
-       "text": "15. I would prefer a task that is intellectual, difficult, and important to one that is somewhat important but does not require much thought."
-      },
-      {
-       "value": "question 16",
-       "text": "16. I feel relief rather than satisfaction after completing a task that requires a lot of mental effort."
-      },
-      {
-       "value": "question 17",
-       "text": "17. It’s enough for me that something gets the job done; I don’t care how or why it works."
-      },
-      {
-       "value": "question 18",
-       "text": "18. I usually end up deliberating about issues even when they do not affect me personally."
-      }
-     ]
+     "columnLayout": "vertical",
+     "horizontalScroll": true,
+     "choices": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "cellType": "radiogroup",
+     "columnColCount": 0,
+     "rowCount": 1,
+     "minRowCount": 1,
+     "maxRowCount": 1
     }
    ]
   },
@@ -171,56 +181,68 @@ var surveyJSON = {
     {
      "type": "html",
      "name": "question6",
-     "html": "Now, I will ask you to rate the items in the below table indicating the extend to which you agree or disagree to each of the topics. For example, if you totally agree with the subject, please place a \"7\" (totally agree) on the likert scale next to it. On the contrary, if you totally disagree with the subject, please place a \"1\" (totally disagree) on the likert scale next to it."
+     "html": "Now, I will ask you to rate the items in the below table indicating the extend to which you agree or disagree to each of the topics. For example, if you totally agree with the subject, please place a \"7\" (totally agree) on the likert scale next to it. On the contrary, if you totally disagree with the subject, please place a \"1\" (totally disagree) on the likert scale next to it. In case you don't hold an opinion on the topic, please place a \"4\" (uncertain) on the likert scale. \n</br>\n</br>You should use the following scale as you rate each of the statements below.\n</br>\n</br>\n<center><p><b>1-Strongly Disagree</b>&emsp;<b>2-Disagree</b>&emsp;<b>3-Somewhat Disagree</b>&emsp;<b>4-Uncertain</b>&emsp;<b>5-Somewhat Disagree</b>&emsp;<b>6-Agree</b>&emsp;<b>7-Strongly agree</b></p></center>\n</html>"
     },
     {
-     "type": "matrix",
-     "name": "question2",
+     "type": "matrixdynamic",
+     "name": "question8",
      "titleLocation": "hidden",
      "columns": [
       {
-       "value": "1",
-       "text": "1 Strongly Disagree"
+       "name": "a1",
+       "title": "Nuclear Energy"
       },
-	  {
-       "value": "2",
-       "text": "2 Disagree"
+      {
+       "name": "a2",
+       "title": "Abortion"
       },
-	  {
-       "value": "3",
-       "text": "3 Somewhat Disagree"
+      {
+       "name": "a3",
+       "title": "Vegan Diet"
       },
-	  {
-       "value": "4",
-       "text": "4 Uncertain"
+      {
+       "name": "a4",
+       "title": "Cryptocurrency"
       },
-	  {
-       "value": "5",
-       "text": "5 Somewhat Agree"
+      {
+       "name": "a5",
+       "title": "Brexit"
       },
-	  {
-       "value": "6",
-       "text": "6 Agree"
+      {
+       "name": "a6",
+       "title": "European Union"
       },
-	  {
-       "value": "7",
-       "text": "7 Strongly Agree"
+      {
+       "name": "a7",
+       "title": "Euthanasia"
+      },
+      {
+       "name": "a8",
+       "title": "Anti-vaxxers (Viaccine Hesitancy))"
+      },
+      {
+       "name": "a9",
+       "title": "Genetically Modified Organisms (GMO)"
+      },
+      {
+       "name": "a10",
+       "title": "Homeopathy"
       }
      ],
-     "rows": [
-      "Nuclear Energy",
-      "Euthanasia",
-      "Vegan Diet",
-      "Abortion",
-      "Brexit",
-      "Cryptocurrencies (e.g. Bitcoin, Litcoin, etc.)",
-      "Genetically Modified Organisms (GMO)",
-      "Anti-vaxxers (Vaccine hesitancy)",
-      "European Union",
-      "Homeopathy"
+     "columnLayout": "vertical",
+     "choices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
      ],
-     "rowsOrder": "random",
-     "isAllRowRequired": true
+     "cellType": "radiogroup",
+     "rowCount": 1,
+     "minRowCount": 1,
+     "maxRowCount": 1
     }
    ]
   }
