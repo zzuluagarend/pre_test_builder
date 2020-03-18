@@ -1,14 +1,3 @@
-function random_string(){
-    var crypto = require("crypto");
-	var id = crypto.randomBytes(5).toString('hex')
-	return id
-};
-
-Survey
-    .FunctionFactory
-    .Instance
-    .register("random_string");
-
 
 Survey
 	.StylesManager
@@ -181,7 +170,7 @@ var surveyJSON = {
     {
      "type": "html",
      "name": "question6",
-     "html": "Now, I will ask you to rate the items in the below table indicating the extend to which you agree or disagree to each of the topics. For example, if you totally agree with the subject, please place a \"7\" (totally agree) on the likert scale next to it. On the contrary, if you totally disagree with the subject, please place a \"1\" (totally disagree) on the likert scale next to it. In case you don't hold an opinion on the topic, please place a \"4\" (uncertain) on the likert scale. \n</br>\n</br>You should use the following scale as you rate each of the statements below.\n</br>\n</br>\n<center><p><b>1-Strongly Disagree</b>&emsp;<b>2-Disagree</b>&emsp;<b>3-Somewhat Disagree</b>&emsp;<b>4-Uncertain</b>&emsp;<b>5-Somewhat Agree</b>&emsp;<b>6-Agree</b>&emsp;<b>7-Strongly agree</b></p></center>\n</html>"
+     "html": "Now, I will ask you to rate the items in the below table indicating the extent to which you agree or disagree to each of the topics. For example, if you totally agree with the subject, please place a \"7\" (totally agree) on the likert scale next to it. On the contrary, if you totally disagree with the subject, please place a \"1\" (totally disagree) on the likert scale next to it. In case you don't hold an opinion on the topic, please place a \"4\" (uncertain) on the likert scale. \n</br>\n</br>You should use the following scale as you rate each of the statements below.\n</br>\n</br>\n<center><p><b>1-Strongly Disagree</b>&emsp;<b>2-Disagree</b>&emsp;<b>3-Somewhat Disagree</b>&emsp;<b>4-Uncertain</b>&emsp;<b>5-Somewhat Agree</b>&emsp;<b>6-Agree</b>&emsp;<b>7-Strongly agree</b></p></center>\n</html>"
     },
     {
      "type": "matrixdynamic",
