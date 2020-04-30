@@ -203,7 +203,7 @@ var surveyJSON = {
       },
       {
        "name": "a7",
-       "title": "Euthanasia"
+       "title": "Euthanasia (assisted dying by medical personnel)"
       },
       {
        "name": "a8",
