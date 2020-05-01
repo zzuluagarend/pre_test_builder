@@ -29,7 +29,7 @@ var surveyJSON = {
     {
      "type": "html",
      "name": "question1",
-     "html": "</html>\n<h1><center>Instructions</center></h1>\n</br>\n</br>\nThis experiment consists of two parts: One online session and one in-lab session. Before starting, I will ask you to generate an ID to link the results of both sessions. Please enter in the textbox below the first two letters of your first name followed by the first two letters of your last name and the two-digit number corresponding to your birthday (e.g. <i>John Doe</i>, jodo12). Please write this ID down as you will be asked for it during the in-lab session. \n</br>\n</br><p style=\"font-size:20px\">Please enter your ID:</p>\n</html>"
+     "html": "</html>\n<h1><center>Instructions</center></h1>\n</br>\n</br>\nThis experiment consists of two online sessions. Before starting, I will ask you to generate an ID to link the results of both sessions. Please enter in the textbox below the first two letters of your first name followed by the first two letters of your last name and the two-digit number corresponding to your birthday (e.g. <i>John Doe</i>, jodo12). Please write this ID down as you will be asked for it during the second session. \n</br>\n</br><p style=\"font-size:20px\">Please enter your ID:</p>\n</html>"
     },
     {
      "type": "text",
